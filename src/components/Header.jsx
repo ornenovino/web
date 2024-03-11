@@ -1,16 +1,17 @@
 function Header() {
     return (
-        <header className="flex flex-row py-8 px-4 mx-auto lg:py-10 lg:px-6">
-            <img className="h-12 mr-20" src="/public/assets/av-logo.png" alt="" />
+        <header className="flex flex-row items-center py-4 px-4 mx-auto lg:py-8 lg:px-6">
+            <img className="h-12 lg:h-16 mr-4 lg:mr-10" src="/public/assets/av-logo.png" alt="Logo" />
 
-            <nav className="flex flex-row items-center justify-between w-full text-center">
-                <a href="#top">Inicio</a>
-                <a href="#biography">Biografía</a>
-                <a href="#conferences">Conferencias</a>
-                <a href="#press">Prensa</a>
-                <a href="#contact">Contacto</a>
+            <nav className="flex flex-row items-center justify-between w-full text-center text-xs lg:text-sm xl:text-base">
+                <a href="#top" className="text-gray-600 hover:text-indigo-600 transition duration-300 ease-in-out px-2 lg:px-4">Inicio</a>
+                <a href="#biography" className="text-gray-600 hover:text-indigo-600 transition duration-300 ease-in-out px-2 lg:px-4">Biografía</a>
+                <a href="#conferences" className="text-gray-600 hover:text-indigo-600 transition duration-300 ease-in-out px-2 lg:px-4">Conferencias</a>
+                <a href="#press" className="text-gray-600 hover:text-indigo-600 transition duration-300 ease-in-out px-2 lg:px-4">Prensa</a>
+                <a href="#contact" className="text-gray-600 hover:text-indigo-600 transition duration-300 ease-in-out px-2 lg:px-4">Contacto</a>
             </nav>
-        </header>)
+        </header>
+    );
 }
 
 export default Header;

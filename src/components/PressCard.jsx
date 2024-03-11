@@ -18,7 +18,7 @@ const press = [
     },
     {
         title: "¡Viven! El triunfo del espíritu humano",
-        description: "Piers Poul Read un gran novelista Inglés ha escrito el único relato dictado por los supervivientes",
+        description: "Piers Poul Read ha escrito el único relato dictado por los supervivientes",
         more: "Decidimos que debía escribirse este libro para que se conociese la verdad, por los muchos rumores que corrieron sobre lo que pasó en la cordillera. Dedicamos la historia de nuestros sufrimientos y solidaridad a aquellos amigos que murieron por nosotros, y también a sus padres porque cuando más lo necesitamos nos recibieron con amor y comprensión."
     },
     {
@@ -38,7 +38,7 @@ const press = [
     },
     {
         title: "Jugarán al rugby donde se estrelló el avión",
-        description: "Se trata de un homenaje a las víctimas que organizó la Fundación Rugby sin Fronteras. Para ello se armó una cancha a 3.800 metros de altura.",
+        description: "Homenaje a las víctimas por la Fundación Rugby sin Fronteras. Se armó una cancha a 3.800 metros de altura.",
         more: "La tragedia de los Andes, cobró fama mundial luego del estreno de la película Viven que describió con lujo de detalles el horror del accidente aéreo que tuvo lugar en octubre de 1972. Hoy, 40 años después de esa tragedia, uno de los sobrevivientes, familiares de las víctimas y deportistas jugarán un partido de rugby en el mismo lugar del accidente: el homenaje se realizará del 23 al 26 de este mes en el cerro El Sosneado, al sur de Mendoza.",
         art1: "../../public/assets/el_pais_3.pdf",
         art2: "../../public/assets/el_pais_4.pdf",
@@ -50,28 +50,28 @@ const press = [
 
 const PressCard = () => {
     return (
-        <div className="grid grid-cols-4 gap-4">
-            {press.map((press, index) => {
-                return (
-                    <div className="max-w-64 w-full" key={index}>
-                        <div className="shadow-inner border border-gray-300 rounded-lg flex flex-col justify-between leading-normal w-full h-full">
-                            <div className="mb-8">
-                                <div className="text-gray-900 font-bold text-xl m-2">
-                                    {press.title}
-                                </div>
-                                <p className="text-gray-700 text-base p-2">{press.description}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {press.map((item, index) => (
+                <div key={index} className="flex flex-col">
+                    <div className="shadow-inner border border-gray-300 rounded-lg flex flex-col justify-between leading-normal w-full h-full">
+                        <div className="mb-8">
+                            <div className="text-gray-900 font-bold text-xl m-2">
+                                {item.title}
                             </div>
-                            <button className="m-4">
+                            <p className="text-gray-700 text-base p-2">{item.description}</p>
+                        </div>
+                        <div className="flex justify-center pb-4">
+                            <button>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="black" className="w-6 h-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
                             </button>
                         </div>
                     </div>
-                );
-            })}
+                </div>
+            ))}
         </div>
     );
 }
 
-export default PressCard
+export default PressCard;

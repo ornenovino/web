@@ -30,7 +30,7 @@ const videos = [
     },
     {
         id: 3,
-        url: "https://www.youtube.com/embed/laNHSN3xUNY"
+        url: "https://www.youtube.com/embed/fVmUT8i4fCQ"
     },
     {
         id: 4,
@@ -39,6 +39,30 @@ const videos = [
     {
         id: 5,
         url: "https://www.youtube.com/embed/dI1SIt0qC4Y"
+    },
+    {
+        id: 6,
+        url: "https://www.youtube.com/embed/1CXnPtoexHU"
+    },
+    {
+        id: 7,
+        url: "https://www.youtube.com/embed/-Ukc5yh0ZBI"
+    },
+    {
+        id: 8,
+        url: "https://www.youtube.com/embed/gTkfdnpFJX4"
+    },
+    {
+        id: 9,
+        url: "https://www.youtube.com/embed/3zpOyqDMDsY"
+    },
+    {
+        id: 10,
+        url: "https://www.youtube.com/embed/X31_OyNJVek"
+    },
+    {
+        id: 11,
+        url: "https://www.youtube.com/embed/T46NtXYQs8o"
     }
 ]
 
@@ -51,7 +75,7 @@ const videoSlider = () => {
                 </div>
                 <Carousel
                     responsive={responsive}
-                    autoPlay={false}
+                    autoPlay={true}
                     swipeable={true}
                     draggable={true}
                     showDots={false}
@@ -61,10 +85,10 @@ const videoSlider = () => {
                 >
                     {videos.map((video, index) => {
                         return (
-                            <div className="max-w-sm w-full h-full" key={index}>
+                            <div className="max-w-sm w-full h-auto" key={index}>
 
-                                <div className="slider rounded w-full h-full overflow-hidden shadow-lg m-10">
-                                    <iframe className="rounded" height="315"
+                                <div className="slider w-full h-5/6 overflow-hidden p-2">
+                                    <iframe className="w-full rounded-lg shadow-md" height="315"
                                         src={video.url} title={`video-${video.id}`}
                                         allowFullScreen>
                                     </iframe>

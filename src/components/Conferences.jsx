@@ -89,18 +89,19 @@ const Slider = () => {
                 responsive={responsive}
                 autoPlay={true}
                 swipeable={true}
-                draggable={true}
+                // draggable={true}
                 showDots={false}
                 infinite={true}
                 partialVisible={false}
                 dotListClass="custom-dot-list-style"
+
             >
                 {cards.map((card, index) => {
                     return (
                         <div className="max-w-sm" key={index}>
-                            <div className="slider w-60 h-5/6 overflow-hidden shadow-lg">
-                                <img className="w-full rounded-t-lg" src={card.image} />
-                                <p className="font-bold text-l mt-4 mb-4 pb-14 text-cyan-950">{card.title}</p>
+                            <div className="slider w-70 h-5/6 overflow-hidden rounded-md m-2 p-2">
+                                <p className="font-bold text-sm m-auto p-auto text-cyan-950">{card.title}</p>
+                                <img className="w-full rounded-lg shadow-md" src={card.image} />
                             </div>
                         </div>
                     );
