@@ -1,3 +1,4 @@
+import ScrollToTop from "react-scroll-to-top";
 
 function Contact() {
     return (
@@ -75,6 +76,7 @@ function Contact() {
                     <img src="public/assets/mountain.png" alt="" />
                 </div>
             </div>
+            <ScrollToTop smooth color='#374151' className="flex items-center justify-center align-middle" />
         </article>
     )
 }
