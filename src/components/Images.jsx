@@ -3,10 +3,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 const img = [
-    { image: "public/assets/42-15889295.jpg" },
-    { image: "public/assets/42-15889296.jpg" },
-    { image: "public/assets/42-16452757.jpg" },
-    { image: "public/assets/42-16452762.jpg" },
+    { image: "assets/42-15889295.jpg" },
+    { image: "assets/42-15889296.jpg" },
+    { image: "assets/42-16452757.jpg" },
+    { image: "assets/42-16452762.jpg" },
 ]
 const Images = () => {
     return (
