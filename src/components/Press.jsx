@@ -3,7 +3,7 @@ import PressCard from "./PressCard"
 function Press() {
     return (
 
-        <article className="flex flex-col items-start mx-auto mb-10 px-4">
+        <article id="press" className="flex flex-col items-start mx-auto mb-10 px-4">
             <div className="text-gray-500 text-lg font-semibold font-['Poppins']">
                 Prensa
             </div>

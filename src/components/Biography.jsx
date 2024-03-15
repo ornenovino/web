@@ -1,6 +1,6 @@
 function Biography() {
     return (
-        <article className="flex flex-col items-center mx-auto mt-10 px-4">
+        <article id="biography" className="flex flex-col items-center mx-auto mt-10 px-4">
             <div className="text-gray-500 text-lg font-semibold font-['Poppins'] mb-2">
                 Biografía
             </div>

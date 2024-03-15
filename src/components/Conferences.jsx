@@ -76,7 +76,7 @@ const cards = [
 
 const Slider = () => {
     return (
-        <div className="parent">
+        <div id="conferences" className="parent">
             <div className="m-4 text-gray-500 text-lg font-semibold font-['Poppins']">
                 Conferencias
             </div>

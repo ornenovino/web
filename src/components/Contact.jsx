@@ -1,8 +1,8 @@
 
 function Contact() {
     return (
-        <article className="flex flex-col items-start mx-auto mb-10 px-4">
-            <div className="m-4 text-gray-500 text-lg font-semibold font-['Poppins']">
+        <article id="contact" className="flex flex-col items-start mx-auto mb-10 px-4">
+            <div className="text-gray-500 text-lg font-semibold font-['Poppins']">
                 Medios de contacto
             </div>
             <div
