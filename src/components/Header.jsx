@@ -1,7 +1,7 @@
 function Header() {
     return (
-        <header className="flex flex-row items-center py-4 px-4 mx-auto lg:py-8 lg:px-6">
-            <img className="h-12 lg:h-16 mr-4 lg:mr-10" src="/public/assets/av-logo.png" alt="Logo" />
+        <header className="flex flex-col items-center py-4 px-4 mx-auto lg:flex-row lg:py-8 lg:px-6">
+            <img className="h-12 lg:h-16 mr-4 lg:mr-10" src="public/assets/av-logo.png" alt="Logo" />
 
             <nav className="flex flex-row items-center justify-between w-full text-center text-xs lg:text-sm xl:text-base">
                 <a href="#top" className="text-gray-600 hover:text-indigo-600 transition duration-300 ease-in-out px-2 lg:px-4">Inicio</a>

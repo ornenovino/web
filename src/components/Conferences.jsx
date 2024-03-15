@@ -5,72 +5,72 @@ const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
         items: 4,
-        slidesToSlide: 4 // optional, default to 1.
+        slidesToSlide: 4
     },
     tablet: {
         breakpoint: { max: 1024, min: 768 },
         items: 3,
-        slidesToSlide: 3 // optional, default to 1.
+        slidesToSlide: 3
     },
     mobile: {
-        breakpoint: { max: 767, min: 464 },
-        items: 2,
-        slidesToSlide: 1 // optional, default to 1.
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+        slidesToSlide: 1
     }
 };
 
 const cards = [
     {
         title: "Caja Popular de Tamazula",
-        image: "../../public/assets/vt-conf-img-1.jpg",
+        image: "public/assets/vt-conf-img-1.jpg",
     },
     {
         title: "Municipalidad de San Martín",
-        image: "../../public/assets/vt-conf-img-2.jpg",
+        image: "public/assets/vt-conf-img-2.jpg",
     },
     {
         title: "Siemens",
-        image: "../../public/assets/vt-conf-img-3.jpg",
+        image: "public/assets/vt-conf-img-3.jpg",
     },
     {
         title: "IYF Oks Soo Park",
-        image: "../../public/assets/vt-conf-img-4.jpg",
+        image: "public/assets/vt-conf-img-4.jpg",
     },
     {
         title: "Colegio Confluencia",
-        image: "../../public/assets/vt-conf-img-5.jpg",
+        image: "public/assets/vt-conf-img-5.jpg",
     },
     {
         title: "Salentien Fruit",
-        image: "../../public/assets/vt-conf-img-6.jpg",
+        image: "public/assets/vt-conf-img-6.jpg",
     },
     {
         title: "Congente",
-        image: "../../public/assets/vt-conf-img-7.jpg",
+        image: "public/assets/vt-conf-img-7.jpg",
     },
     {
         title: "Forever Living",
-        image: "../../public/assets/vt-conf-img-8.jpg",
+        image: "public/assets/vt-conf-img-8.jpg",
     },
     {
         title: "Club Tucuman Rugby",
-        image: "../../public/assets/vt-conf-img-9.jpg",
+        image: "public/assets/vt-conf-img-9.jpg",
     },
     {
         title: "Genesis Consultores",
-        image: "../../public/assets/vt-conf-img-10.jpg",
+        image: "public/assets/vt-conf-img-10.jpg",
     },
     {
         title: "Est. Bullo Estebanet y Torassa",
-        image: "../../public/assets/vt-conf-img-11.jpg",
+        image: "public/assets/vt-conf-img-11.jpg",
     },
     {
         title: "Lundbeck Argentina",
-        image: "../../public/assets/vt-conf-img-12.jpg",
+        image: "public/assets/vt-conf-img-12.jpg",
     },
     {
         title: "Aktio",
-        image: "../../public/assets/vt-conf-img-13.jpg",
+        image: "public/assets/vt-conf-img-13.jpg",
     },
 ];
 
@@ -81,7 +81,7 @@ const Slider = () => {
                 Conferencias
             </div>
             <div
-                className="text-indigo-950 text-5xl font-bold font-['Volkhov'] capitalize mb-6"
+                className="text-indigo-950 text-3xl md:text-5xl font-bold font-['Volkhov'] capitalize mb-6"
             >
                 por el mundo
             </div>
@@ -94,7 +94,7 @@ const Slider = () => {
                 infinite={true}
                 partialVisible={false}
                 dotListClass="custom-dot-list-style"
-
+                className="max-w-sm lg:max-w-full"
             >
                 {cards.map((card, index) => {
                     return (

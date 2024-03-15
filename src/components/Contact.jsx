@@ -1,12 +1,12 @@
 
 function Contact() {
     return (
-        <article className="flex flex-col items-start mx-auto">
+        <article className="flex flex-col items-start mx-auto mb-10 px-4">
             <div className="m-4 text-gray-500 text-lg font-semibold font-['Poppins']">
                 Medios de contacto
             </div>
             <div
-                className="text-indigo-950 text-5xl font-bold font-['Volkhov'] capitalize mb-6"
+                className="text-indigo-950 text-3xl md:text-5xl font-bold font-['Volkhov'] capitalize mb-6"
             >
                 Contacto
             </div>
@@ -71,7 +71,7 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-                <div className="flex-end">
+                <div className="flex-end invisible lg:visible bottom-0">
                     <img src="public/assets/mountain.png" alt="" />
                 </div>
             </div>

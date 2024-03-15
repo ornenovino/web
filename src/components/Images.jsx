@@ -3,19 +3,19 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 const img = [
-    { image: "../../public/assets/42-15889295.jpg" },
-    { image: "../../public/assets/42-15889296.jpg" },
-    { image: "../../public/assets/42-16452757.jpg" },
-    { image: "../../public/assets/42-16452762.jpg" },
+    { image: "public/assets/42-15889295.jpg" },
+    { image: "public/assets/42-15889296.jpg" },
+    { image: "public/assets/42-16452757.jpg" },
+    { image: "public/assets/42-16452762.jpg" },
 ]
 const Images = () => {
     return (
-        <article className="mt-4">
+        <article className="mt-4 px-4">
             <div className="m-4 text-gray-500 text-lg font-semibold font-['Poppins']">
                 En la cordillera
             </div>
             <div
-                className="text-indigo-950 text-5xl font-bold font-['Volkhov'] capitalize mb-6"
+                className="text-indigo-950 text-3xl md:text-5xl font-bold font-['Volkhov'] capitalize mb-6"
             >
                 Imágenes
             </div>
@@ -26,7 +26,7 @@ const Images = () => {
                 showThumbs={false}
                 showIndicators={false}
                 showArrows={true}
-                className="relative h-96 w-full rounded-2xl overflow-hidden flex justify-center items-center"
+                className="relative lg:h-96 w-full h-full rounded-2xl overflow-hidden flex justify-center items-center"
                 autoPlay
                 renderArrowPrev={(clickHandler, hasPrev) => {
                     return (
