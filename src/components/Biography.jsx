@@ -10,7 +10,7 @@ function Biography() {
             <div className="bg-blue-400 bg-opacity-30 rounded-lg flex flex-col md:flex-row w-full">
                 <div className="text-left text-m font-medium md:w-1/2 p-5 text-pretty text-black">
                     Antonio Vizintin, Tintín, nació en Montevideo en 1953. Estudió en el
-                    colegio Christian Brothers. Actualmente es Vicepresidente de la Unión de
+                    colegio Christian Brothers. Fue Presidente de la Unión de
                     Rugby del Uruguay (URU) y miembro del consejo de administración de la
                     FUNDACIÓN VIVEN. Su gran fortaleza física, así como los valores
                     adquiridos de los hermanos irlandeses, tallaron hondo en su ser, haciendo de

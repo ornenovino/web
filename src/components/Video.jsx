@@ -63,6 +63,14 @@ const videos = [
     {
         id: 11,
         url: "https://www.youtube.com/embed/T46NtXYQs8o"
+    },
+    {
+        id: 12,
+        url: "https://www.youtube.com/embed/SeBBDn5RbEs"
+    },
+    {
+        id: 13,
+        url: "https://www.youtube.com/embed/yWoCXy5avyQ"
     }
 ]
 

@@ -3,7 +3,7 @@ import ScrollToTop from "react-scroll-to-top";
 function Contact() {
     return (
         <article id="contact" className="flex flex-col items-start mx-auto mb-10 px-4">
-            <div className="text-gray-500 text-lg font-semibold font-['Poppins']">
+            <div className="text-gray-500 text-lg font-semibold font-['Poppins'] mt-8">
                 Medios de contacto
             </div>
             <div
@@ -23,7 +23,7 @@ function Contact() {
                             </svg>
                         </div>
                         <div className="grid place-content-center">
-                            <p className="text-gray-700 ml-4"><a href="tel:+59812341234">+59812341234</a></p>
+                            <p className="text-gray-700 ml-4"><a href="tel:+59894456464">+59894456464</a></p>
                         </div>
                     </div>
                     <div className="flex flex-row w-full">
@@ -73,7 +73,7 @@ function Contact() {
                     </div>
                 </div>
                 <div className="flex-end invisible lg:visible bottom-0">
-                    <img src="public/assets/mountain.png" alt="" />
+                    <img src="assets/mountain.png" alt="" />
                 </div>
             </div>
             <ScrollToTop smooth color='#374151' className="flex items-center justify-center align-middle" />
